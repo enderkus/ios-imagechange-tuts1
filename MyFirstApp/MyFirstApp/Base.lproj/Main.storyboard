@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MyFirstApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ender KUŞ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Ma-db-Y1E">
+                                <rect key="frame" x="69" y="44" width="276" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="zur-1K-SrZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="mo1" translatesAutoresizingMaskIntoConstraints="NO" id="h2K-La-cc8">
+                                <rect key="frame" x="44" y="145" width="327" height="200"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4uE-ab-CgE">
+                                <rect key="frame" x="138" y="380" width="139" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="31" id="0hr-iq-GGb"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Change"/>
+                                <connections>
+                                    <action selector="change_clicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Lxb-aH-g2n"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="h2K-La-cc8" firstAttribute="centerX" secondItem="4uE-ab-CgE" secondAttribute="centerX" id="Dob-6M-eUT"/>
+                            <constraint firstItem="h2K-La-cc8" firstAttribute="top" secondItem="6Ma-db-Y1E" secondAttribute="bottom" constant="21" id="E7X-EX-mRE"/>
+                            <constraint firstItem="6Ma-db-Y1E" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="E89-Tg-muq"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="4uE-ab-CgE" secondAttribute="bottom" constant="451" id="Mp1-UQ-6TO"/>
+                            <constraint firstItem="6Ma-db-Y1E" firstAttribute="centerX" secondItem="h2K-La-cc8" secondAttribute="centerX" id="UKV-1y-Pjo"/>
+                            <constraint firstItem="4uE-ab-CgE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="138" id="h0z-V0-yEQ"/>
+                            <constraint firstItem="6Ma-db-Y1E" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="iEd-t7-3SL"/>
+                            <constraint firstItem="h2K-La-cc8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="44" id="lCV-co-b2b"/>
+                            <constraint firstItem="6Ma-db-Y1E" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="69" id="pd5-vB-5Of"/>
+                            <constraint firstItem="4uE-ab-CgE" firstAttribute="top" secondItem="h2K-La-cc8" secondAttribute="bottom" constant="35" id="z4s-Dg-PAA"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="resimGosterici" destination="h2K-La-cc8" id="T0b-Dh-Ro8"/>
+                        <outlet property="titleText" destination="6Ma-db-Y1E" id="qJh-XS-DJI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1.4492753623188408" y="53.571428571428569"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="mo1" width="512" height="512"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
